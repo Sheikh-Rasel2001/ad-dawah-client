@@ -43,7 +43,7 @@ const Navbar = () => {
                 </div>
                 {/* menu bar */}
                 <div className="">
-                    <ul className="hidden lg:flex items-center gap-5">
+                    <ul className="hidden lg:flex items-center gap-5 english">
                         <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Home</NavLink>
                         <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>About</NavLink>
                         <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Blog</NavLink>
@@ -59,15 +59,15 @@ const Navbar = () => {
                                 <NavLink className={'hover:underline text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Gallery</NavLink>
                                 <NavLink className={'hover:underline text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Testimonial</NavLink>
                                 <NavLink className={'hover:underline text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Contact</NavLink>
-                                
+
                             </ul>
 
                         </div>
 
                         {/* contact and log in info */}
-                        <div className="flex gap-8 items-center">
-                            <button className="flex gap-1 items-center py-2 px-4 bg-[#f59e0b] border border-gray-300 text-lg rounded-lg text-white font-bold"><FaRegHeart /> Donate</button>
-                            <button className="flex gap-1 items-center py-2 px-4 border-2 border-green-700 rounded-lg text-green-400 text-lg font-bold hover:bg-white"><FaRegUser /> Log In</button>
+                        <div className="flex gap-8 items-center ">
+                            <button className="english flex gap-1 items-center py-2 px-4 bg-[#f59e0b] border border-gray-300 text-lg rounded-lg text-white font-semibold"><FaRegHeart /> Donate</button>
+                            <button className="english flex gap-1 items-center py-2 px-4 border-2 border-green-700 rounded-lg text-green-400 text-lg font-semibold hover:bg-white"><FaRegUser /> Log In</button>
                         </div>
                     </ul>
                 </div>
@@ -89,26 +89,15 @@ const Navbar = () => {
                 }
                 ${showMenu ? 'translate-x-0' : 'translate-x-full'}
                 `}>
-                <ul className="flex flex-col items-center gap-5">
-                    <NavLink onClick={closeAll} className={'text-xl font-semibold text-gray-900'}>Home</NavLink>
-                    <NavLink onClick={closeAll} className={'text-xl font-semibold text-gray-900'}>About</NavLink>
-                    <NavLink onClick={closeAll} className={'text-xl font-semibold text-gray-900'}>Blog</NavLink>
-                    <NavLink onClick={closeAll} className={'text-xl font-semibold text-gray-900'}>Projects</NavLink>
-                    <div className="relative">
-                        <NavLink onClick={() => setOpen(!open)} className={'flex items-center gap-1 text-xl font-semibold text-gray-900'}>
-                            Home
-                            {open ? <FaAngleDown /> : <FaAngleRight />}
-                        </NavLink>
-                        <ul className={`absolute bottom-0 left-full w-40 p-3 flex flex-col gap-2 transform transition-all duration-300 ${open ?
-                            'opacity-100 scale-100 translate-y-0 visible' :
-                            'opacity-0 scale-95 -translate-y-2 invisible'}`}>
-                            <NavLink onClick={closeAll} className={'text-xl font-semibold text-gray-900'}>Home 1</NavLink>
-                            <NavLink onClick={closeAll} className={'text-xl font-semibold text-gray-900'}>Home 1</NavLink>
-                            <NavLink onClick={closeAll} className={'text-xl font-semibold text-gray-900'}>Home 1</NavLink>
-                            <NavLink onClick={closeAll} className={'text-xl font-semibold text-gray-900'}>Home 1</NavLink>
-                        </ul>
-
-                    </div>
+                <ul className="flex flex-col items-center gap-3 english">
+                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home</NavLink>
+                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>About</NavLink>
+                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Blog</NavLink>
+                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Projects</NavLink>
+                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home 1</NavLink>
+                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home 1</NavLink>
+                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home 1</NavLink>
+                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home 1</NavLink>
 
                     {/* contact and log in info */}
                     <div>
