@@ -47,7 +47,7 @@ const Navbar = () => {
                         <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Home</NavLink>
                         <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>About</NavLink>
                         <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Blog</NavLink>
-                        <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Projects</NavLink>
+                        <NavLink to={'/projects'} className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Projects</NavLink>
                         <div className="relative">
                             <NavLink onClick={() => setOpen(!open)} className={'flex items-center gap-1 text-xl font-semibold text-gray-700 hover:text-[#f59e0b]'}>
                                 More
@@ -93,7 +93,7 @@ const Navbar = () => {
                     <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home</NavLink>
                     <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>About</NavLink>
                     <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Blog</NavLink>
-                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Projects</NavLink>
+                    <NavLink to={'/projects'} onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Projects</NavLink>
                     <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home 1</NavLink>
                     <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home 1</NavLink>
                     <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home 1</NavLink>
