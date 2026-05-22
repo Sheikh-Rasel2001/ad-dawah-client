@@ -8,6 +8,7 @@ const FeaturedProjects = ({project}) => {
         initial={{opacity: 0, y: 20}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 0.6, delay: id * 0.1}}
+        viewport={{once: true}}
         className="bg-white shadow-lg hover:shadow-2xl rounded-xl group transition-all duration-300 bangla">
             {/* image */}
             <div className="w-full h-48 overflow-hidden relative rounded-t-xl">

@@ -56,6 +56,7 @@ const TestimonialCarousel = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
+          viewport={{once: true}}
           className='text-2xl lg:text-4xl text-[#001931] font-bold mb-4 english'
         >
           What People Say
@@ -64,6 +65,7 @@ const TestimonialCarousel = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{once: true}}
           className=' english text-gray-800'
         >
           Reviews from our supporters, donors, and community members
@@ -74,6 +76,7 @@ const TestimonialCarousel = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{once: true}}
         className='relative max-w-4xl mx-auto px-4 py-8'>
         <h1 className='text-xl lg:text-3xl font-bold text-[#001931] text-center english mb-6'>What Our Community Says</h1>
 

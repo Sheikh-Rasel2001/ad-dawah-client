@@ -36,7 +36,7 @@ const Navbar = () => {
                         <img src={logoImg} alt="Ad-Dawaah" className="lg:w-10 lg:h-10 w-8 h-8" />
                         <div>
                             <h2 className="text-sm lg:text-xl">আদ-দাওয়াহ ইসলামী</h2>
-                            <p className="text-xs lg:text-sm text-gray-700">পাঠাগার</p>
+                            <p className="text-xs lg:text-sm text-gray-700">পাঠাগার এন্ড দাওয়াহ সেন্টার</p>
                         </div>
                     </Link>
 
@@ -44,8 +44,9 @@ const Navbar = () => {
                 {/* menu bar */}
                 <div className="">
                     <ul className="hidden lg:flex items-center gap-5 english">
-                        <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Home</NavLink>
-                        <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>About</NavLink>
+                        <NavLink to={'/'} className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Home</NavLink>
+
+                        <NavLink to={'/about'} className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>About</NavLink>
                         <NavLink className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Blog</NavLink>
                         <NavLink to={'/projects'} className={'text-lg font-semibold text-gray-700 hover:text-[#f59e0b]'}>Projects</NavLink>
                         <div className="relative">
@@ -84,14 +85,14 @@ const Navbar = () => {
             {/* mobile nav */}
             <div className={`fixed top-[72] right-0 w-full transform lg:hidden transition-transform duration-300 ease-in-out
                 ${isScrolled ?
-                    'bg-white/10 backdrop-blur-sm shadow-sm py-3' :
+                    'bg-white/70 backdrop-blur-lg shadow-sm py-3' :
                     'bg-white shadow-lg py-2'
                 }
                 ${showMenu ? 'translate-x-0' : 'translate-x-full'}
                 `}>
                 <ul className="flex flex-col items-center gap-3 english">
-                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home</NavLink>
-                    <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>About</NavLink>
+                    <NavLink to={'/'} onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home</NavLink>
+                    <NavLink to={'/about'} onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>About</NavLink>
                     <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Blog</NavLink>
                     <NavLink to={'/projects'} onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Projects</NavLink>
                     <NavLink onClick={closeAll} className={'text-lg font-semibold text-gray-900'}>Home 1</NavLink>

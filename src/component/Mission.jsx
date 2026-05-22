@@ -39,11 +39,13 @@ const Mission = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                viewport={{once: true}}
                 className="bangla text-center text-2xl lg:text-4xl whitespace-nowrap font-bold text-gray-900 mb-4">আমাদের লক্ষ্য ও উদ্দেশ্য</motion.h1>
             <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{once: true}}
                 className="text-center text-gray-700 bangla font-semibold">খাঁটি ইসলামী জ্ঞান দ্বারা মুসলিম উম্মাহকে পথপ্রদর্শন করা। ইসলামের আলো ছড়িয়ে দিতে এবং মানবকল্যাণে কাজ করাই আমাদের অঙ্গীকার।</motion.p>
 
             <div className="mt-16 max-w-6xl mx-auto ">
@@ -53,6 +55,7 @@ const Mission = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{once: true}}
                 className="bg-white shadow-md p-8 border-t-4 rounded-xl hover:shadow-2xl border-t-emerald-500 transition-all duration-300 group"
                 >
                     <div className="w-16 h-16 flex justify-center items-center bg-emerald-100 rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:bg-emerald-500 mb-6">
@@ -78,6 +81,7 @@ const Mission = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{once: true}}
                 className="bg-white shadow-md p-8 border-t-4 rounded-xl hover:shadow-2xl border-t-amber-500 transition-all duration-300 group"
                 >
                     <div className="w-16 h-16 flex justify-center items-center bg-amber-100 rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:bg-amber-500 mb-6">

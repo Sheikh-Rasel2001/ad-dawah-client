@@ -12,6 +12,7 @@ const Support = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{once: true}}
           className="flex items-center gap-2 text-sm lg:text-lg font-semibold text-white px-4 py-2 lg:px-6 lg:p-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-4 lg:mb-6"><FaMosque className="text-orange-400" /> بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</motion.button>
       </div>
       <div className='flex justify-center items-center flex-col'>
@@ -19,24 +20,28 @@ const Support = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{once: true}}
           className='text-3xl lg:text-5xl font-bold english text-white whitespace-nowrap mb-3'>Make a Difference Today</motion.h1>
 
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{once: true}}
           className='text-2xl lg:text-4xl text-[#fbbf24] font-semibold english whitespace-nowrap mb-4'>Your Support Changes Lives</motion.h2>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{once: true}}
           className='text-gray-50 text-center max-w-4xl mx-auto lg:text-xl font-semibold english mb-6'>Join thousands of supporters who are making a real impact in our community. Every donation, volunteer hour, and member strengthens our mission to spread authentic Islamic knowledge and serve those in need.</motion.p>
         {/* our member project */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{once: true}}
           className='py-6 max-w-4xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-4'>
           {/* lives impacted */}
           <div className='text-center'>
@@ -65,6 +70,7 @@ const Support = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
+          viewport={{once: true}}
           className='mt-6 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6'>
           {/* make a donate */}
           <div className='p-6 flex flex-col group border border-gray-400 rounded-xl bg-white/10 backdrop-blur-sm transition-all transform duration-500 hover:-translate-y-2'>
@@ -104,7 +110,7 @@ const Support = () => {
             <div className='w-full'>
               <Link className='flex gap-1 justify-center items-center px-6 py-3 bg-linear-to-r from-emerald-400 to-emerald-500 rounded-lg transition-all transform duration-300 hover:scale-105 hover:bg-emerald-700 text-lg text-white font-semibold'>
                 <FaRegHeart className='' />
-                Donate Now
+                Join as Volunteer
                 <FaArrowRight />
               </Link>
 

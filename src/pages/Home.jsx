@@ -53,11 +53,13 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            viewport={{once: true}}
             className="text-3xl lg:text-4xl text-center font-bold bangla mb-4">আমাদের বিশেষ কার্যক্রম</motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{once: true}}
             className="max-w-4xl mx-auto text-center mb-8 text-emerald-800 bangla"
           >
             আদ-দাওয়াহ ইসলামী পাঠাগার এন্ড দাওয়াহ সেন্টার সমাজের কল্যাণে শিক্ষা, দাওয়াহ, মানবসেবা ও সামাজিক উন্নয়নমূলক বিভিন্ন কার্যক্রম পরিচালনা করে আসছে। আমাদের এই উদ্যোগগুলো মানুষের জীবনে ইতিবাচক পরিবর্তন আনতে এবং ইসলামের সৌন্দর্য ছড়িয়ে দিতে গুরুত্বপূর্ণ ভূমিকা রাখছে।
